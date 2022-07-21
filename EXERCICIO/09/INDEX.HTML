@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telas em html</title>
+</head>
+<body>
+    <h1>Imagem Dinamica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou diminua e aumente o navegador</p>
+    <picture>
+        <source media="(max-width: 550px)" srcset="imagens/Smal.png" type="image/png">
+        <source media="(max-width: 750px)" srcset="imagens/midlle.png" type="image/png">
+        <img src="IMAGENS/large.png" alt="imagem grande">
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir audios</p>
+    <audio src="media/happy-mistake.mp3" controls autoplay></audio>
+    <!-- MP3 WAV OGG -->
+
+    <P>outra forma tbm de colocar audio é</P>
+    <audio preload="metadata">
+        <source src="media/guanacast-33.mp3" type="audio/mpeg">
+                                            <!-- VOCE TBM PODE USAR OUTROS FORMATOS NO TYPE 
+                                                PARA INDICAR OUTROS FORMATOS DE AUDIO-->
+                                                <!-- audio/mpeg
+                                                     audio/ogg
+                                                     audio/wav-->
+    </audio>
+</body>
+</html>
