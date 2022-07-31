@@ -5,9 +5,20 @@
     padding: 0px;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Fira Sans', sans-serif;
+    --fonte3: 'Sriracha', cursive;
+}
+
 html body {
     background-color: rgb(146, 146, 146);
     min-height: 100vh;
+    font-family: var(--fonte1);
 }
 
 header {
@@ -19,6 +30,8 @@ header {
 header h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 3em;
 }
 
 header p {
@@ -40,6 +53,11 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte3);
+}
+
+section > p {
+    padding-bottom: 2em;
 }
 
 section.normal {
@@ -50,11 +68,27 @@ section.normal {
 section.img {
     background-color: rgb(32, 32, 32);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-attachment: fixed;
 }
 
 section.img > p {
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.253);
+    text-shadow: 1px 1px 0px black;
+}
+
+section#i01 {
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+
+section#i02 {
+    background-image: url(imagens/background002.jpg);
+    background-position: right center;
+    background-size: cover;
 }
 
 footer {
